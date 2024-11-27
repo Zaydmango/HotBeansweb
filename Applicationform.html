@@ -1,0 +1,279 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Application Form - Hot Beans</title> 
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+    <style> 
+
+        .bg-image { 
+
+            background-image: url("https://cdn.pixabay.com/photo/2018/01/17/07/47/coffee-shop-3089645_1280.jpg"); 
+
+            height: 100vh; 
+
+            background-position: center; 
+
+            background-repeat: no-repeat; 
+
+            background-size: cover; 
+
+        } 
+
+ 
+
+        .form-section { 
+
+            background-color: rgba(255, 255, 255, 0.9); 
+
+            padding: 40px; 
+
+            border-radius: 10px; 
+
+            max-width: 800px; 
+
+            margin: auto; 
+
+            margin-top: 50px; 
+
+        } 
+
+ 
+
+        .form-section h1 { 
+
+            font-size: 3rem; 
+
+            text-align: center; 
+
+            margin-bottom: 20px; 
+
+        } 
+
+ 
+
+        .form-section label { 
+
+            font-size: 1.2rem; 
+
+            margin-bottom: 10px; 
+
+            display: block; 
+
+        } 
+
+ 
+
+        .form-section input, 
+
+        .form-section select, 
+
+        .form-section textarea { 
+
+            width: 100%; 
+
+            padding: 12px; 
+
+            font-size: 1rem; 
+
+            margin-bottom: 20px; 
+
+            border-radius: 5px; 
+
+            border: 1px solid #ccc; 
+
+            box-sizing: border-box; 
+
+        } 
+
+ 
+
+        .form-section button { 
+
+            background-color: #4CAF50; 
+
+            color: white; 
+
+            padding: 15px 32px; 
+
+            font-size: 1.2rem; 
+
+            border: none; 
+
+            border-radius: 5px; 
+
+            cursor: pointer; 
+
+            width: 100%; 
+
+        } 
+
+ 
+
+        .form-section button:hover { 
+
+            background-color: #45a049; 
+
+        } 
+
+ 
+
+        .w3-bar { 
+
+            display: flex; 
+
+            justify-content: center; 
+
+            align-items: center; 
+
+            background-color: black; 
+
+        } 
+
+ 
+
+        .w3-bar-item { 
+
+            margin: 0 15px; 
+
+        } 
+
+ 
+
+        .w3-bar-item:hover { 
+
+            background-color: #555; 
+
+        } 
+
+ 
+
+        .w3-container { 
+
+            margin: 30px 0; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+<body class="w3-light-grey"> 
+
+ 
+
+    <!-- Navbar --> 
+
+    <div class="w3-bar w3-black"> 
+
+        <a href="index.html" class="w3-bar-item w3-button">Home</a> 
+
+        <a href="Staff.html" class="w3-bar-item w3-button">Staff</a> 
+
+        <a href="Job descriptions.html" class="w3-bar-item w3-button">Job Description</a> 
+
+        <a href="Aboutus.html" class="w3-bar-item w3-button">About Us</a> 
+
+        <a href="Applicationform.html" class="w3-bar-item w3-button">Application Form</a> 
+
+    </div> 
+
+ 
+
+    <!-- Application Form Section --> 
+
+    <div class="form-section"> 
+
+        <h1>Job Application Form</h1> 
+
+        <form action="submit_application.php" method="POST"> 
+
+            <label for="full-name">Full Name</label> 
+
+            <input type="text" id="full-name" name="full_name" required placeholder="Enter your full name"> 
+
+ 
+
+            <label for="email">Email Address</label> 
+
+            <input type="email" id="email" name="email" required placeholder="Enter your email address"> 
+
+ 
+
+            <label for="phone">Phone Number</label> 
+
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"> 
+
+ 
+
+            <label for="job-role">Job Role</label> 
+
+            <select id="job-role" name="job_role" required> 
+
+                <option value="">Select a job role</option> 
+
+                <option value="technical-support">Technical Support Lead</option> 
+
+                <option value="project-manager">Project Manager</option> 
+
+                <option value="developer">IT Developer</option> 
+
+                <option value="software-developer">Software Developer</option> 
+
+                <option value="it-support-specialist">IT Support Specialist</option> 
+
+                <option value="network-administrator">Network Administrator</option> 
+
+                <option value="cybersecurity-analyst">Cybersecurity Analyst</option> 
+
+            </select> 
+
+ 
+
+            <label for="cover-letter">Cover Letter</label> 
+
+            <textarea id="cover-letter" name="cover_letter" rows="4" required placeholder="Write a brief cover letter explaining why you're a good fit for the job"></textarea> 
+
+ 
+
+            <label for="resume">Upload Your Resume</label> 
+
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx,.doc" required> 
+
+ 
+
+            <label for="experience">Relevant Experience</label> 
+
+            <textarea id="experience" name="experience" rows="4" placeholder="Describe any relevant experience you have in the IT field (if applicable)"></textarea> 
+
+ 
+
+            <button type="submit">Submit Application</button> 
+
+        </form> 
+
+    </div> 
+
+ 
+
+    <!-- Footer --> 
+
+    <footer class="w3-container w3-black w3-center w3-padding-16"> 
+
+        <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank" class="w3-hover-text-blue">w3.css</a></p> 
+
+    </footer> 
+
+ 
+
+</body> 
+
+</html> 
